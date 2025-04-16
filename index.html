@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Kliker</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    button {
+      font-size: 24px;
+      padding: 20px 40px;
+    }
+    #counter {
+      font-size: 48px;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Kliker</h1>
+  <div id="counter">0</div>
+  <button onclick="klik()">Kliknij mnie!</button>
+
+  <script>
+    let licznik = 0;
+    function klik() {
+      licznik++;
+      document.getElementById("counter").textContent = licznik;
+    }
+  </script>
+</body>
+</html>
